@@ -1,8 +1,8 @@
 .card img {
     width: 100%;
-    aspect-ratio: 16/9;   /* perfect ratio */
+    height: 220px;
     object-fit: cover;
-    border-radius: 10px;
+}
 }
 .gallery-container img {
     width: 100%;
