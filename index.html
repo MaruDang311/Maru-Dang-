@@ -5,65 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="p98OnJxwH-aZrno6Wawo-xqWPZdiuAOjghtSSzNsqsw" />
 <title>Maru Dang</title>
+<link rel="stylesheet" href="styles.css">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #f1f8e9;
-}
-
-header {
-    background: #1b5e20;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-nav {
-    background: #2e7d32;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 25px;
-}
-
-h2 {
-    color: #2e7d32;
-}
-
-.intro {
-    margin-bottom: 15px;
-    color: #444;
-}
-
-.card {
-    background: white;
-    margin: 15px 0;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-#langBtn {
+.lang-btn{
     position: fixed;
     top: 10px;
     right: 10px;
-    padding: 8px 12px;
-    background: #2e7d32;
+    background: green;
     color: white;
+    padding: 8px 12px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 8px;
 }
 </style>
 
@@ -72,181 +25,161 @@ h2 {
 <body>
 
 <!-- 🌐 Language Button -->
-<button onclick="toggleLanguage()"id ="langBtn">ગુજરાતી</button>
+<button onclick="toggleLanguage()" class="lang-btn" id="langBtn">ગુજરાતી</button>
 
 <header>
-<h1 data-en="Maru Dang" data-gu="મારુ ડાંગ">Maru Dang</h1>
-<p data-en="Nature • Culture • Tradition" data-gu="પ્રકૃતિ • સંસ્કૃતિ • કૃષિ">
-Nature • Culture • Agriculture 
-</p>
+    <h1 data-en="Maru Dang" data-gu="મારું ડાંગ">Maru Dang</h1>
+    <p data-en="Nature • Culture • Agriculture" 
+       data-gu="પ્રકૃતિ • સંસ્કૃતિ • કૃષિ">
+       Nature • Culture • Agriculture
+    </p>
 </header>
 
 <nav>
-<a href="blog.html" data-en="Blog" data-gu="બ્લોગ">Blog</a>
-<a href="#tourism" data-en="Tourism" data-gu="પર્યટન">Tourism</a>
-<a href="#culture" data-en="Culture" data-gu="સંસ્કૃતિ">Culture</a>
-<a href="#festival" data-en="Festival" data-gu="ઉત્સવ">Festival</a>
-<a href="#food" data-en="Food" data-gu="ભોજન">Food</a>
-<a href="#art" data-en="Art" data-gu="કલા">Art</a>
-<a href="#agriculture" data-en="Agriculture" data-gu="કૃષિ">Agriculture</a>
-<a href="#contact" data-en="Contact" data-gu="સંપર્ક">Contact</a>
+    <a href="blog.html" data-en="Blog" data-gu="બ્લોગ">Blog</a>
+    <a href="#tourism" data-en="Tourism" data-gu="પર્યટન">Tourism</a>
+    <a href="#culture" data-en="Culture" data-gu="સંસ્કૃતિ">Culture</a>
+    <a href="#festival" data-en="Festival" data-gu="ઉત્સવ">Festival</a>
+    <a href="#food" data-en="Food" data-gu="ભોજન">Food</a>
+    <a href="#art" data-en="Art" data-gu="કલા">Art</a>
+    <a href="#agriculture" data-en="Agriculture" data-gu="કૃષિ">Agriculture</a>
+    <a href="#gallery" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+    <a href="#contact" data-en="Contact" data-gu="સંપર્ક">Contact</a>
 </nav>
 
+<!-- TOURISM -->
 <section id="tourism">
-    <h2 data-en="Tourism" data-gu="પર્યટન">Tourism</h2>
- <div class="card-container">
-    <div class="card">
-        <img src="saputara.jpg" alt="Saputara Boating">
-        <h3 data-en="Saputara Boating" data-gu="સાપુતારા બોટિંગ">Saputara Boating</h3>
-        <p data-en="Saputara is a beautiful hill station in Dang."
-           data-gu="સાપુતારા ડાંગનું સુંદર હિલ સ્ટેશન છે.">
-           Saputara is a beautiful hill station in Dang.
-        </p>
-    </div>
+<h2 data-en="Tourism" data-gu="પર્યટન">Tourism</h2>
 
-    <div class="card">
-        <img src="gira.jpg" alt="Gira Waterfall">
-        <h3 data-en="Gira Waterfall " data-gu="ગીરા ધોધ">Gira Waterfall</h3>
-        <p data-en="Gira Waterfall is a famous natural attraction."
-           data-gu="ગીરા ધોધ એક પ્રસિદ્ધ કુદરતી સ્થળ છે.">
-           Gira Waterfall is a famous natural attraction.
-        </p>
-    </div>
+<div class="card-container">
+<div class="card">
+<img src="saputara.jpg">
+<h3 data-en="Saputara Boating" data-gu="સાપુતારા બોટિંગ">Saputara Boating</h3>
+<p data-en="Saputara is a beautiful hill station in Dang."
+   data-gu="સાપુતારા ડાંગમાં આવેલું સુંદર હિલ સ્ટેશન છે.">
+</p>
+</div>
+
+<div class="card">
+<img src="gira.jpg">
+<h3 data-en="Gira Waterfall" data-gu="ગિરા ધોધ">Gira Waterfall</h3>
+<p data-en="Gira Waterfall is a famous natural attraction."
+   data-gu="ગિરા ધોધ એક પ્રસિદ્ધ કુદરતી સ્થળ છે.">
+</p>
+</div>
+</div>
 </section>
-    
+
+<!-- CULTURE -->
 <section id="culture">
 <h2 data-en="Culture" data-gu="સંસ્કૃતિ">Culture</h2>
 
-<p data-en="Dang is rich in tribal culture and traditions."
-data-gu="ડાંગ આદિવાસી સંસ્કૃતિ અને પરંપરામાં સમૃદ્ધ છે.">
-Dang is rich in tribal culture and traditions.
-</p>
+<div class="card-container">
 <div class="card">
-    <img src="culture.jpg" alt="Dang Culture">
-
-    <h3 data-en="Culture" data-gu="સંસ્કૃતિ">
-        Culture
-    </h3>
-
-    <p data-en="Dang is rich in tribal culture with traditional dance, music and unique lifestyle."
-       data-gu="ડાંગ તેની આદિવાસી સંસ્કૃતિ માટે પ્રસિદ્ધ છે જેમાં પરંપરાગત નૃત્ય, સંગીત અને અનોખી જીવનશૈલી જોવા મળે છે.">
-        Dang is rich in tribal culture with traditional dance, music and unique lifestyle.
-    </p>
+<img src="culture.jpg">
+<h3 data-en="Culture" data-gu="સંસ્કૃતિ">Culture</h3>
+<p data-en="Dang is rich in tribal culture and traditions."
+   data-gu="ડાંગ આદિવાસી સંસ્કૃતિ અને પરંપરાઓથી સમૃદ્ધ છે.">
+</p>
+</div>
 </div>
 </section>
 
+<!-- FESTIVAL -->
 <section id="festival">
 <h2 data-en="Festival" data-gu="ઉત્સવ">Festival</h2>
 
-<p data-en="Dang Darbar is a famous tribal festival."
-data-gu="ડાંગ દરબાર એક પ્રખ્યાત આદિવાસી ઉત્સવ છે.">
-Dang Darbar is a famous tribal festival.
-</p>
+<div class="card-container">
 <div class="card">
-    <img src="festival.jpg" alt="Festival">
-
-    <h3 data-en="Festival" data-gu="ઉત્સવ">
-        Festival
-    </h3>
-
-    <p data-en="Dang Darbar is a famous tribal festival celebrated with dance, music and traditions."
-       data-gu="ડાંગ દરબાર એક પ્રસિદ્ધ આદિવાસી ઉત્સવ છે જેમાં નૃત્ય, સંગીત અને પરંપરાઓ જોવા મળે છે.">
-        Dang Darbar is a famous tribal festival celebrated with dance, music and traditions.
-    </p>
+<img src="festival.jpg">
+<h3 data-en="Festival" data-gu="ઉત્સવ">Festival</h3>
+<p data-en="Dang Darbar is a famous tribal festival."
+   data-gu="ડાંગ દરબાર એક પ્રસિદ્ધ ઉત્સવ છે.">
+</p>
+</div>
 </div>
 </section>
 
+<!-- FOOD -->
 <section id="food">
 <h2 data-en="Food" data-gu="ભોજન">Food</h2>
 
-<p data-en="Local tribal food is simple and healthy."
-data-gu="સ્થાનિક આદિવાસી ભોજન સરળ અને આરોગ્યપ્રદ છે.">
-Local tribal food is simple and healthy.
-</p>
+<div class="card-container">
 <div class="card">
-    <img src="food.jpg" alt="Food" style=>
-
-    <h3 data-en="Food" data-gu="ભોજન">
-        Food
-    </h3>
-
-    <p data-en="Dang offers simple and healthy tribal food made from natural ingredients."
-       data-gu="ડાંગમાં કુદરતી ઘટકોથી બનેલું સરળ અને આરોગ્યપ્રદ આદિવાસી ભોજન મળે છે.">
-        Dang offers simple and healthy tribal food made from natural ingredients.
-    </p>
+<img src="food.jpg">
+<h3 data-en="Food" data-gu="ભોજન">Food</h3>
+<p data-en="Local tribal food is simple and healthy."
+   data-gu="સ્થાનિક આદિવાસી ભોજન સરળ અને આરોગ્યદાયક છે.">
+</p>
+</div>
 </div>
 </section>
 
+<!-- ART -->
 <section id="art">
 <h2 data-en="Art" data-gu="કલા">Art</h2>
 
-<p data-en="Handmade tribal art reflects local life."
-data-gu="હસ્તકલામાં સ્થાનિક જીવનની ઝાંખી મળે છે.">
-Handmade tribal art reflects local life.
-</p>
+<div class="card-container">
 <div class="card">
-    <img src="art.jpg" alt="Art">
-
-    <h3 data-en="Art" data-gu="કલા">
-        Art 
-    </h3>
-
-    <p data-en="Dang is known for its unique tribal art, handmade crafts and traditional designs."
-       data-gu="ડાંગ તેની અનોખી આદિવાસી કલા, હસ્તકલા અને પરંપરાગત ડિઝાઇન માટે જાણીતું છે.">
-        Dang is known for its unique tribal art, handmade crafts and traditional designs.
-    </p>
+<img src="art.jpg">
+<h3 data-en="Art" data-gu="કલા">Art</h3>
+<p data-en="Dang is known for tribal art."
+   data-gu="ડાંગ તેની આદિવાસી કલા માટે જાણીતું છે.">
+</p>
+</div>
 </div>
 </section>
 
+<!-- AGRICULTURE -->
 <section id="agriculture">
 <h2 data-en="Agriculture" data-gu="કૃષિ">Agriculture</h2>
 
-<p data-en="Farming is an important part of Dang life."
-data-gu="કૃષિ ડાંગના જીવનનો મહત્વપૂર્ણ ભાગ છે.">
-Farming is an important part of Dang life.
-</p>
+<div class="card-container">
 <div class="card">
-    <img src="agriculture.jpg" alt="Dang Agriculture">
-
-    <h3 data-en="Agriculture in Dang" data-gu="ડાંગમાં કૃષિ">
-        Agriculture in Dang
-    </h3>
-
-    <p data-en="Agriculture is an important part of life in Dang, with crops grown using traditional and natural methods."
-       data-gu="ડાંગમાં કૃષિ જીવનનો મહત્વપૂર્ણ ભાગ છે, જ્યાં પરંપરાગત અને કુદરતી રીતોથી ખેતી કરવામાં આવે છે.">
-        Agriculture is an important part of life in Dang, with crops grown using traditional and natural methods.
-    </p>
+<img src="agriculture.jpg">
+<h3 data-en="Agriculture" data-gu="કૃષિ">Agriculture</h3>
+<p data-en="Farming is an important part of Dang life."
+   data-gu="કૃષિ ડાંગના જીવનનો મહત્વનો ભાગ છે.">
+</p>
+</div>
 </div>
 </section>
+
+<!-- GALLERY -->
 <section id="gallery">
-    <h2 data-en="Gallery" data-gu="ગેલેરી">Gallery</h2>
+<h2 data-en="Gallery" data-gu="ગેલેરી">Gallery</h2>
 
-    <div class="gallery-container">
-
-        <img src="g1.jpg" alt="Dang MUSHROOM">
-        <img src="g2.jpg" alt="Dang GOKALGAY">
-        <img src="g3.jpg" alt="Dang BUTTERFLY">
-        <img src="g4.jpg" alt="Dang SPIDER">
-
-    </div>
-</section>
-    
-<section id="contact" style="padding:40px; background:#f4f4f4; text-align:center;">
-    
-    <h2 data-en="Contact" data-gu="સંપર્ક">Contact</h2>
-
-    <p data-en="Contact us for more information."
-       data-gu="વધુ માહિતી માટે અમારો સંપર્ક કરો.">
-       Contact us for more information.
-    </p>
-
-
-    <p>📧 The311dangsculture@email.com</p>
-
+<div class="gallery-container">
+<img src="g1.jpg">
+<img src="g2.jpg">
+<img src="g3.jpg">
+<img src="g4.jpg">
+</div>
 </section>
 
-<!-- ✅ Script -->
-<script src="script.js"></script>
+<!-- CONTACT -->
+<section id="contact">
+<h2 data-en="Contact" data-gu="સંપર્ક">Contact</h2>
+<p data-en="Contact us for more information."
+   data-gu="વધુ માહિતી માટે અમારો સંપર્ક કરો."></p>
+<p>📧 The311dangsculture@email.com</p>
+</section>
+
+<!-- 🌐 LANGUAGE SCRIPT -->
+<script>
+let isEnglish = true;
+
+function toggleLanguage() {
+    const elements = document.querySelectorAll("[data-en]");
+    isEnglish = !isEnglish;
+
+    elements.forEach(el => {
+        el.innerText = isEnglish ? el.getAttribute("data-en") : el.getAttribute("data-gu");
+    });
+
+    document.getElementById("langBtn").innerText = isEnglish ? "ગુજરાતી" : "English";
+}
+</script>
 
 </body>
 </html>
