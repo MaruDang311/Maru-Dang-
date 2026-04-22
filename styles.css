@@ -1,13 +1,47 @@
-.card img {
-    width: 100%;
-    aspect-ratio: 16/9;   /* perfect ratio */
-    object-fit: cover;
-    border-radius: 10px;
+/* 🌿 General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e9efe5;
 }
+
+/* Header */
+header {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
-.gallery-container img {
-    width: 100%;
-    aspect-ratio: 1/1;   /* square gallery */
-    object-fit: cover;
-    border-radius: 10px;
+
+nav {
+    background: #2e7d32;
+    padding: 10px;
+    text-align: center;
 }
+
+nav a {
+    color: white;
+    margin: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Section */
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #2e7d32;
+}
+
+/* 🔥 ALL CARDS (for Tourism, Culture, Food, Art, etc.) */
+.card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 🔥 IMAGE
