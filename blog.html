@@ -3,61 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog - Maru Dang</title>
+<meta name="google-site-verification" content="p98OnJxwH-aZrno6Wawo-xqWPZdiuAOjghtSSzNsqsw" />
+<title>Maru Dang Blog</title>
+<link rel="stylesheet" href="styles.css">
 
 <style>
-body {
-    font-family: Arial;
-    margin: 0;
-    background: #f4f4f4;
-}
-header {
-    background: #1b5e20;
+.lang-btn{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: green;
     color: white;
-    text-align: center;
-    padding: 20px;
-}
-.blog-container {
-    padding: 20px;
-}
-.post {
-    background: white;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 10px;
-}
-.post h2 {
-    color: #2e7d32;
-}
-a {
-    text-decoration: none;
-    color: green;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
 }
 </style>
+
 </head>
 
 <body>
 
+<!-- 🌐 Language Button -->
+<button onclick="toggleLanguage()" class="lang-btn" id="langBtn">ગુજરાતી</button>
+
 <header>
-    <h1>Maru Dang Blog</h1>
-    <p>Tourism | Culture | Nature</p>
+    <h1 data-en="Maru Dang Blog" data-gu="મારું ડાંગ બ્લોગ">Maru Dang Blog</h1>
 </header>
 
-<div class="blog-container">
+<nav>
+    <a href="index.html" data-en="Home" data-gu="હોમ">Home</a>
+</nav>
 
-    <div class="post">
-        <h2>Explore Dang Forest</h2>
-        <p>Dang is full of beautiful forests and wildlife. It is perfect for nature lovers.</p>
-        <a href="#">Read More</a>
+<section>
+
+<div class="card-container">
+
+    <!-- BLOG 1 -->
+    <div class="card">
+        <img src="saputara.jpg">
+
+        <h2 data-en="Saputara Hill Station"
+            data-gu="સાપુતારા હિલ સ્ટેશન">
+        Saputara Hill Station
+        </h2>
+
+        <p data-en="Saputara is the only hill station in Gujarat, located in Dang district. It is famous for its greenery, lake, ropeway and peaceful environment."
+           data-gu="સાપુતારા ગુજરાતનું એકમાત્ર હિલ સ્ટેશન છે, જે ડાંગ જિલ્લામાં આવેલું છે. તે હરિયાળી, તળાવ અને શાંતિપૂર્ણ વાતાવરણ માટે જાણીતું છે.">
+        </p>
+
+        <p data-en="Best time to visit is during monsoon when the natural beauty is at its peak."
+           data-gu="મુલાકાત માટે શ્રેષ્ઠ સમય ચોમાસું છે જ્યારે કુદરતી સુંદરતા ખૂબ જ આકર્ષક બને છે.">
+        </p>
     </div>
 
-    <div class="post">
-        <h2>Dang Culture</h2>
-        <p>Dang has rich tribal culture and traditions that attract tourists.</p>
-        <a href="#">Read More</a>
+    <!-- BLOG 2 -->
+    <div class="card">
+        <img src="gira.jpg">
+
+        <h2 data-en="Gira Waterfall"
+            data-gu="ગિરા ધોધ">
+        Gira Waterfall
+        </h2>
+
+        <p data-en="Gira Waterfall is one of the most popular attractions in Dang. During rainy season, the waterfall becomes very powerful and beautiful."
+           data-gu="ગિરા ધોધ ડાંગનો એક પ્રસિદ્ધ પ્રવાસન સ્થળ છે. ચોમાસામાં તે ખૂબ જ સુંદર અને શક્તિશાળી બને છે.">
+        </p>
+
+        <p data-en="It is a perfect place for nature lovers and photographers."
+           data-gu="આ કુદરતપ્રેમી અને ફોટોગ્રાફરો માટે ઉત્તમ સ્થળ છે.">
+        </p>
+    </div>
+
+    <!-- BLOG 3 -->
+    <div class="card">
+        <img src="festival.jpg">
+
+        <h2 data-en="Dang Darbar Festival"
+            data-gu="ડાંગ દરબાર ઉત્સવ">
+        Dang Darbar Festival
+        </h2>
+
+        <p data-en="Dang Darbar is a famous tribal festival celebrated with dance, music and traditional attire."
+           data-gu="ડાંગ દરબાર એક પ્રસિદ્ધ આદિવાસી ઉત્સવ છે જેમાં નૃત્ય, સંગીત અને પરંપરાગત વેશભૂષા હોય છે.">
+        </p>
+
+        <p data-en="It reflects the rich cultural heritage of Dang."
+           data-gu="તે ડાંગની સમૃદ્ધ સંસ્કૃતિ દર્શાવે છે.">
+        </p>
     </div>
 
 </div>
+
+</section>
+
+<!-- 🌐 Language Script -->
+<script>
+let isEnglish = true;
+
+function toggleLanguage() {
+    const elements = document.querySelectorAll("[data-en]");
+    isEnglish = !isEnglish;
+
+    elements.forEach(el => {
+        el.innerText = isEnglish
+            ? el.getAttribute("data-en")
+            : el.getAttribute("data-gu");
+    });
+
+    document.getElementById("langBtn").innerText =
+        isEnglish ? "ગુજરાતી" : "English";
+}
+</script>
 
 </body>
 </html>
