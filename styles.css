@@ -137,3 +137,8 @@ header h1 {
         height: 200px;
     }
 }
+/* Tagline bottom fix */
+header p {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
