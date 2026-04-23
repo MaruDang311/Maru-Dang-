@@ -2,8 +2,14 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: #e9efe5;
-}
+    background: 
+linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+url("images/warli-bg.jpg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
 
 /* Header */
 header {
@@ -105,4 +111,13 @@ h2 {
 .card:hover {
     transform: translateY(-5px);
     transition: 0.3s;
+}
+    /* 📱 Mobile Fix */
+@media (max-width: 768px) {
+    #langBtn {
+        top: 70px;
+        right: 10px;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
