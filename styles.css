@@ -48,9 +48,9 @@ nav {
 
 nav a {
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 nav a:hover {
