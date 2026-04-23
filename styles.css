@@ -26,15 +26,12 @@ header::before {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(rgba(0,80,0,0.6), rgba(0,80,0,0.7)),
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
                 url('girmal.jpg');
 
     background-size: cover;
     background-position: center;
-
-    z-index: 0;
 }
-
 /* Content above background */
 header * {
     position: relative;
