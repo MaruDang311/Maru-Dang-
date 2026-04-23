@@ -13,11 +13,17 @@ background-attachment: fixed;
 
 /* Header */
 header {
-    background: rgba(27, 94, 32, 0.85);
     color: white;
     text-align: center;
-    padding: 15px;
-    backdrop-filter: blur(8px);
+    padding: 20px;
+
+    background:
+    linear-gradient(rgba(0,80,0,0.7), rgba(0,80,0,0.7)),
+    url("warli.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Navbar */
