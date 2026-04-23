@@ -169,20 +169,34 @@
 </section>
 
 <!-- 🌐 LANGUAGE SCRIPT -->
-<script>
-let isEnglish = true;
+<script id="l0h0gk">
+let currentLang = "gu"; // ✅ Default Gujarati
 
-function toggleLanguage() {
-    const elements = document.querySelectorAll("[data-en]");
-    isEnglish = !isEnglish;
+function setLanguage(lang) {
+    currentLang = lang;
 
-    elements.forEach(el => {
-        el.innerText = isEnglish ? el.getAttribute("data-en") : el.getAttribute("data-gu");
+    document.querySelectorAll("[data-en]").forEach(el => {
+        el.innerText = el.getAttribute(`data-${lang}`);
     });
 
-    document.getElementById("langBtn").innerText = isEnglish ? "ગુજરાતી" : "English";
+    // Button text change
+    document.querySelector(".lang-btn").innerText = 
+        lang === "gu" ? "English" : "ગુજરાતી";
 }
-</script>
 
+// Toggle function
+function toggleLanguage() {
+    if (currentLang === "gu") {
+        setLanguage("en");
+    } else {
+        setLanguage("gu");
+    }
+}
+
+// ✅ Page load થાય ત્યારે Gujarati set કરવું
+window.onload = function () {
+    setLanguage("gu");
+};
+</script>
 </body>
 </html>
