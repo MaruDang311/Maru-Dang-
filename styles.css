@@ -135,3 +135,7 @@ header h1 {
     margin-top: 0;
     font-size: clamp(28px, 5vw, 48px);
 }
+header p {
+    margin-top: 20px;
+    font-size: 18px;
+}
