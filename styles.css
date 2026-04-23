@@ -13,13 +13,12 @@ background-attachment: fixed;
 
 /* Header */
 header {
+    background: grab(27,94,32,0.85)
     color: white;
     text-align: center;
     padding: 20px;
-
-    background:
-linear-gradient(rgba(0,80,0,0.7), rgba(0,80,0,0.7)),
-url('girmal.jpg');
+    backdrop-filter: blur(8px);
+}
 
 /* Navbar */
 nav {
@@ -27,6 +26,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    backdrop-filter: blur(8px);
 }
 
 nav a {
@@ -54,6 +54,7 @@ h2 {
 /* 🔥 CARD */
 .card {
     background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
