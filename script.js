@@ -1,13 +1,16 @@
-let currentLang = localStorage.getItem("lang") || "gu"; // Default Gujarati
+let currentLang = localStorage.getItem("lang") || "gu";
 
 function setLanguage(lang) {
     let elements = document.querySelectorAll("[data-en]");
     
     elements.forEach(el => {
+        let enText = el.getAttribute("data-en");
+        let guText = el.getAttribute("data-gu");
+
         if (lang === "gu") {
-            el.innerText = el.getAttribute("data-gu");
+            el.innerText = guText || enText;
         } else {
-            el.innerText = el.getAttribute("data-en");
+            el.innerText = enText || guText;
         }
     });
 
@@ -16,23 +19,12 @@ function setLanguage(lang) {
     localStorage.setItem("lang", lang);
 }
 
-// Toggle button
 function toggleLanguage() {
     currentLang = (currentLang === "gu") ? "en" : "gu";
     setLanguage(currentLang);
 }
 
-// Auto detect browser language (first time only)
-window.onload = () => {
-    if (!localStorage.getItem("lang")) {
-        let browserLang = navigator.language;
-
-        // Gujarati priority
-        if (browserLang.startsWith("gu")) {
-            currentLang = "gu";
-        } else {
-            currentLang = "gu"; // fallback પણ Gujarati
-        }
-    }
+// ✅ IMPORTANT FIX
+document.addEventListener("DOMContentLoaded", function () {
     setLanguage(currentLang);
-};
+});
