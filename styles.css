@@ -10,7 +10,8 @@ header {
     position: relative;
     color: white;
     text-align: center;
-    padding: 20px 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     overflow: hidden;
 }
 
