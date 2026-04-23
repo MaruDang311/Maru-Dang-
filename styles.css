@@ -13,18 +13,20 @@ background-attachment: fixed;
 
 /* Header */
 header {
-    background: #1b5e20;
+    background: rgba(27, 94, 32, 0.85);
     color: white;
     text-align: center;
     padding: 15px;
+    backdrop-filter: blur(8px);
 }
 
 /* Navbar */
 nav {
-    background: #2e7d32;
+    background: rgba(46, 125, 50, 0.85);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    backdrop-filter: blur(8px);
 }
 
 nav a {
@@ -51,14 +53,12 @@ h2 {
 
 /* 🔥 CARD */
 .card {
-    background: white;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-
-    overflow: hidden;   /* 🔥 ADD THIS */
 }
-
 /* 🔥 SAME SIZE IMAGES */
 .card img {
     width: 100%;
