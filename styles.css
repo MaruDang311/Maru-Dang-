@@ -126,8 +126,8 @@ h2 {
     .card img {
         height: 180px;
     }
-}
 h1 {
-    font-size: clamp(24px, 5vw, 48px);
+    font-size: 40px;
     font-weight: bold;
+    margin: 0;
 }
